@@ -24,10 +24,6 @@ A company wants to streamline their promotions process to make it a little easie
 ### Company Promotion Rules
 
 - [ ] **Application for Promotion** - Every employee must fill out an Application for Promotion in order to be considered for promotion to a new position. The application has certain required information while other information is voluntary for the purpose of producing analytics for the company.
-    * First Name
-    * Last Name
-    * Current Position
-    * Position Applying For
 - [ ] Employee must have been in their current position for a minimum of 1 full year.
     * The only way an employee can be promoted with less than a year in a position is if they were highered into the position with **Special Consideration**.
 - [ ] Promotions can only be made in the fourth quarter of the business year.
@@ -42,70 +38,146 @@ A company wants to streamline their promotions process to make it a little easie
     * 
 
 
-### Promotion Checkpoints/Steps
+### Promotion Process
 
-1. **Special Considerations** - Check for any special considerations the employee might have. This could potentially allter other steps.
-1. Human Resources Validation for Readiness of Applicant.
-    * Check for 
+The following are the steps that are followed 
 
-### Promotion Logic
+#### Application Progression:
+
+1. Employee fills out an **[Application for Promotion](#application-for-promotion)**.
+1. Employee gets their mentor to sign the **[Application for Promotion](#application-for-promotion)**.
+    * The employee hands in the application to their manager.
+1. Manager fills out a **[Promotion Readiness](#promotion-readiness)** form.
+1. Manager adds the **[Promotion Readiness](#promotion-readiness)** form along with the **[Application for Promotion](#application-for-promotion)** for to the same file and places the name of the applicant on the outside of the folder.
+1. Manager hands in the Promotion folder to Human Resources.
+    * Place **[Promotion Readiness](#promotion-readiness)** form in a folder with the **[Application for Promotion](#application-for-promotion)** placing the applicant's name on the outside of the folder.
+1. **Special Considerations** - Check for any special considerations the employee might have. This could potentially alter other steps.
+1. Human Resources validates the readiness of the applicant by checking their application.
+    * Check applicant's seniority and a a point modifier to their overall application score.
+    * Check applicant's annual rating against the rating rules and add modifier to overall application score. If applicant does not meet minimal requirements **[Reject Application](#reject-application)**.
+
+
+#### Application for Promotion:
+
+1. Personal Information
+    * First Name
+    * Last Name
+    * Suffix
+1. Date filled out
+
+
+#### Promotion Readiness:
+
+1. Manager fills out employee information.
+    * First Name
+    * Last Name
+    * Suffix
+    * Employee ID Number
+    * Application for Promotion ID Number
+1. Manager fills out section marked, "For Manager Only".
+    * Manager First Name
+    * Manager Last Name
+    * Initial Rating 1 - 3 where:
+        - 1 = Applicant would underperform in position
+        - 2 = Applicant would meet the expectations of the position
+        - 3 = Applicant would excel in the position
+    * Comments on why the employee was rated how they were.
+    * Yes or No, have you discussed the promotion with the employee prior to application.
+    * A short description of what the discussion between the manager and employee was. 
+    * Manager Signature
+    * Date filled out
+1. Human Resources fills out section marked, "For Human Resources Only".
+    * HR Rep. First Name
+    * HR Rep. Last Name
+    * Yes or No, applicant meets...
+    * HR Rep. Signature
+    * Date filled out
+
+
+#### Reject Application:
+
+1. Mark application as rejected.
+1. Note reason for rejection on the application.
+1. Application goes to the employee's manager to discuss with the employee.
+    * The **Promotion Readiness** form does not get shared directly with the employee but the application itself gets shared.
+    * If the employee requests a copy of the application the manager will provide them with a photocopy of the application.
+    * Specifically the manager will discuss ways that the employee can work towards getting meeting their goal of getting promoted. 
+1. Manager makes an action plan and makes a copy that gets added to the application folder.
+1. Application folder is handed back to Human Resources.
+1. Human Resources files the application folder with the rest of the employee's information.
+
+
+#### Validated Application:
+
+1. Mark application as validated.
+1. Fill in name of Primary Manager
+1. Fill in name of interviewing Manager
+1. Fill in name of interviewing HR. Rep
+1. Fill in name of interviewing Department Technical Representative.
+1. Fill in name of mentor
+
+
+### Salary by Department and Position
+
 
 #### Sales
 
-1. Sales Associate
-    * Pay Range: $30,000 - $45,000
-    * Sales Commission: 3%
-1. Sales Engineer
-    * Pay Range: $00,000 - $00,000
-    * Sales Commission: 3%
-1. Sales Regional Director
-    * Pay Range: $00,000 - $00,000
-    * Sales Commission: 0%
-1. Sales National Director
-    * Pay Range: $30,000 - $45,000
-    * Sales Commission: 3%
+| Position | Commission Pct. | Min. Compensation | Max. Compensation |
+| ----------- | ----------- | ----------- | ----------- |
+| Associate Sales Engineer | 3% | $00,000 | $00,000 |
+| Sales Engineer | 3% | $00,000 | $00,000 |
+| Sales Engineer Level 1 | 3% | $00,000 | $00,000 |
+| Sales Engineer Level 2 | 3% | $00,000 | $00,000 |
+| Senior Sales Engineer | 3% | $00,000 | $00,000 |
+| Regional Director of Sales | 3% | $00,000 | $00,000 |
+| National Director of Sales | 3% | $00,000 | $00,000 |
 
 
 #### Engineering
 
-1. Software Engineer Apprentice
-1. Software Engineer Level 1
-1. Software Engineer Level 2
-1. Senior Software Engineer
-1. Principal Software Engineer
-1. Architectural Software Engineer
-1. Senior Architectural Software Engineer
+| Position | Min. Compensation | Max. Compensation |
+| ----------- | ----------- | ----------- |
+| Associate Software Engineer | $00,000 | $00,000 |
+| Software Engineer Level 1 | $00,000 | $00,000 |
+| Software Engineer Level 2 | $00,000 | $00,000 |
+| Senior Software Engineer | $00,000 | $00,000 |
+| Principal Software Engineer | $00,000 | $00,000 |
+| Architectural Software Engineer | $00,000 | $00,000 |
+| Senior Architectural Software Engineer | $00,000 | $00,000 |
 
 
-#### Project Manager
+#### Project Management
 
-1. Project Management Associate
-1. Project Manager
-1. Senior Project Manager
-1. Principal Project Manager
-1. Product Owner
+| Position | Min. Compensation | Max. Compensation |
+| ----------- | ----------- | ----------- |
+| Associate Project Manager | $00,000 | $00,000 |
+| Project Manager | $00,000 | $00,000 |
+| Senior Project Manager | $00,000 | $00,000 |
+| Principal Project Manager | $00,000 | $00,000 |
+| Product Owner | $00,000 | $00,000 |
+
 
 #### Analyst
 
-1. Associate Business Analyst
-1. Business Analyst Level 1
-1. Business Analyst Level 2
-1. Senior Business Analyst
-1. Product Owner
+| Position | Min. Compensation | Max. Compensation |
+| ----------- | ----------- | ----------- |
+| Associate Business Analyst | $00,000 | $00,000 |
+| Business Analyst Level 1 | $00,000 | $00,000 |
+| Business Analyst Level 2 | $00,000 | $00,000 |
+| Senior Business Analyst | $00,000 | $00,000 |
+| Product Owner | $00,000 | $00,000 |
+
 
 #### Design
 
-1. Associate Designer
-1. Graphic Designer
-1. UI Designer
-1. Senior UI Designer
-1. Principal UI Designer
-1. UX Designer
-1. Senior UX Designer
-1. Principal UX Designer
-
-### Data Structure
-
-
-
-### Server and Database
+| Position | Min. Compensation | Max. Compensation |
+| ----------- | ----------- | ----------- |
+| Associate Designer | $00,000 | $00,000 |
+| Graphic Designer | $00,000 | $00,000 |
+| UI Designer | $00,000 | $00,000 |
+| Senior UI Designer | $00,000 | $00,000 |
+| Principal UI Designer | $00,000 | $00,000 |
+| UX Designer | $00,000 | $00,000 |
+| Senior UX Designer | $00,000 | $00,000 |
+| Principal UX Designer | $00,000 | $00,000 |
+| Designer Director | $00,000 | $00,000 |
